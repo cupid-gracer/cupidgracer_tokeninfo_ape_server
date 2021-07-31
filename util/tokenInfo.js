@@ -21,7 +21,7 @@ var {
         axios_bitquery_header,    
     } = require( "../constants/constant.js");
 
-class ISATokenInfo
+class TokenInfo
 {
     constructor()
     {
@@ -172,4 +172,4 @@ class ISATokenInfo
     }
 }
 
-module.exports = ISATokenInfo;
+module.exports = TokenInfo;

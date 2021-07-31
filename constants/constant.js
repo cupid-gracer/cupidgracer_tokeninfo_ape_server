@@ -31,4 +31,8 @@ module.exports = {
         'X-API-KEY': 'BQYH1avkjKkPZFYKru9VSb71fBnLdz05',
     }
   },
+  CMC_header:{
+    mode: 'no-cors', // this is to prevent browser from sending 'OPTIONS' method request first
+    "X-CMC_PRO_API_KEY" : "0bb5f72f-18f0-46b3-bd3c-c425a6ed0b97",
+  },
 };

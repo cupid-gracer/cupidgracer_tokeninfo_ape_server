@@ -5,7 +5,8 @@ var express = require('express'),
   // Task = require('./api/models/apeModel'), //created model loading here
   bodyParser = require('body-parser');
 var routes = require('./api/routes/apeRoutes'); //importing route
-  
+var cors = require('cors');
+
 // mongoose instance connection url connection
 // mongoose.Promise = global.Promise;
 // mongoose.connect('mongodb://localhost/Tododb');
@@ -13,7 +14,7 @@ var routes = require('./api/routes/apeRoutes'); //importing route
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
+app.use(cors());
 
 routes(app); //register the route
 
